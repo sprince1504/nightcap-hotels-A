@@ -1,5 +1,6 @@
 {
   "mappings": [
-    "/content/nightcap-hotels-A/:/"
+    "/content/nightcap-hotels-A/:/",
+    "/content/nightcap-hotels-B/:/"
   ]
 }
