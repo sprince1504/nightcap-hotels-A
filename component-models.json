@@ -180,7 +180,7 @@
         "component": "richtext",
         "name": "text",
         "value": "",
-        "label": "Text",
+        "label": "Custom Text",
         "valueType": "string"
       }
     ]
