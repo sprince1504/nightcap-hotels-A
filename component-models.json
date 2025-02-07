@@ -191,14 +191,14 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "imageAlt",
+        "name": "compTitle",
         "label": "Title",
-        "value": ""
+        "value": "test"
       },
       {
         "component": "richtext",
-        "name": "text",
-        "value": "",
+        "name": "compDescription",
+        "value": "test",
         "label": "description",
         "valueType": "string"
       }
