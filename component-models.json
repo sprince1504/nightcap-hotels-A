@@ -186,21 +186,47 @@
     ]
   },
   {
-    "id": "testcomponent",
+    "id": "quote",
     "fields": [
       {
-        "component": "text",
+        "component": "reference",
         "valueType": "string",
-        "name": "compTitle",
-        "label": "Title",
-        "value": "test"
+        "name": "quoteImage",
+        "label": "Quote Image"
       },
       {
-        "component": "richtext",
-        "name": "compDescription",
-        "value": "test",
-        "label": "description",
-        "valueType": "string"
+        "component": "text-input",
+        "valueType": "string",
+        "name": "quoteImageAlt",
+        "label": "Image Alt",
+        "value": "Default alt"
+      },
+      {
+        "component": "text-area",
+        "valueType": "string",
+        "value": "",
+        "name": "quote",
+        "label": "Quote"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "quoteLogo",
+        "label": "Quote Logo"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "quoteLogoAlt",
+        "label": "Image Alt",
+        "value": "Default alt"
+      },
+      {
+        "component": "text-area",
+        "valueType": "string",
+        "name": "author",
+        "label": "Author",
+        "value": ""
       }
     ]
   }
