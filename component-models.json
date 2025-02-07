@@ -184,5 +184,24 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "testcomponent",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Title",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "description",
+        "valueType": "string"
+      }
+    ]
   }
 ]
