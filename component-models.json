@@ -239,14 +239,14 @@
         "label": "Test"
       }
     ]
-  }
+  },
   {
     "id": "bgcolor",
     "fields": [
       {
         "component": "select",
-        "name": "titleType",
-        "label": "Title Type",
+        "name": "bgcolor",
+        "label": "Bg Color",
         "options": [
           {
             "name": "red",
