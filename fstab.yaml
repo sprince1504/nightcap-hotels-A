@@ -1,6 +1,5 @@
 mountpoints:
   /:
     url: "https://author-p118957-e1156553.adobeaemcloud.com/bin/franklin.delivery/sprince1504/nightcap-hotels-A/main"
-    url: "https://author-p118957-e1156553.adobeaemcloud.com/bin/franklin.delivery/sprince1504/nightcap-hotels-B/main"
     type: "markup"
     suffix: ".html"
