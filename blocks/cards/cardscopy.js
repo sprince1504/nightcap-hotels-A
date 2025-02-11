@@ -1,15 +1,14 @@
-import { createOptimizedPicture } from '../../scripts/aem.js';
-import { moveInstrumentation } from '../../scripts/scripts.js';
+import { createOptimizedPicture } from "../../scripts/aem.js";
+import { moveInstrumentation } from "../../scripts/scripts.js";
+
 function Hello(props) {
-  return /*#__PURE__*/React.createElement("div", null, "Some text ", props.some);
+  return React.createElement("div", null, `Hello ${props.toWhat}`);
 }
+
 export default function decorate(block) {
-  console.log('card', block);
-  console.log('card', block);
+  console.log("card", block);
   const root = ReactDOM.createRoot(block);
-  root.render(/*#__PURE__*/React.createElement(Hello, {
-    some: "wowwwoww"
-  }));
+  // root.render(React.createElement(Hello, { toWhat: "World hsdhdash" }, null));
 
   /* change to ul, li */
   // const ul = document.createElement("ul");
