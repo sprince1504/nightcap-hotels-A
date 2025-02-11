@@ -229,5 +229,39 @@
         "value": ""
       }
     ]
+  },
+  {
+    "id": "testcomponent",
+    "fields": [
+      {
+        "component": "text",
+        "name": "test",
+        "label": "Test"
+      }
+    ]
+  }
+  {
+    "id": "bgcolor",
+    "fields": [
+      {
+        "component": "select",
+        "name": "titleType",
+        "label": "Title Type",
+        "options": [
+          {
+            "name": "red",
+            "value": "red"
+          },
+          {
+            "name": "black",
+            "value": "black"
+          },
+          {
+            "name": "green",
+            "value": "green"
+          }
+        ]
+      }
+    ]
   }
 ]
