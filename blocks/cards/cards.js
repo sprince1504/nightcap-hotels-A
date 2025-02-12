@@ -3,13 +3,20 @@ import { moveInstrumentation } from '../../scripts/scripts.js';
 function Hello(props) {
   return /*#__PURE__*/React.createElement("div", null, "Some text ", props.some);
 }
+function App() {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, "Hello, world!"), /*#__PURE__*/React.createElement(Counter, null));
+}
+function Counter() {
+  const [count, setCount] = React.useState(0);
+  return /*#__PURE__*/React.createElement("button", {
+    onClick: () => setCount(count + 1)
+  }, "You clicked me ", count, " times");
+}
 export default function decorate(block) {
   console.log('card', block);
   console.log('card', block);
   const root = ReactDOM.createRoot(block);
-  root.render(/*#__PURE__*/React.createElement(Hello, {
-    some: "wowwwoww"
-  }));
+  root.render(/*#__PURE__*/React.createElement(App, null));
 
   /* change to ul, li */
   // const ul = document.createElement("ul");

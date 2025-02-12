@@ -5,11 +5,29 @@ function Hello(props) {
   return <div>Some text {props.some}</div>;
 }
 
+function App() {
+  return (
+    <>
+      <h1>Hello, world!</h1>
+      <Counter />
+    </>
+  );
+}
+
+function Counter() {
+  const [count, setCount] = React.useState(0);
+  return (
+    <button onClick={() => setCount(count + 1)}>
+      You clicked me {count} times
+    </button>
+  );
+}
+
 export default function decorate(block) {
   console.log('card', block);
   console.log('card', block);
   const root = ReactDOM.createRoot(block);
-  root.render(<Hello some="wowwwoww"/>);
+  root.render(<App/>);
 
   /* change to ul, li */
   // const ul = document.createElement("ul");
