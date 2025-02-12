@@ -18,7 +18,8 @@
       "fragment",
       "quote",
       "bgcolor",
-      "simpleMarquee"
+      "simpleMarquee",
+      "aem-content-fragment"
     ]
   },
   {
