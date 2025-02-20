@@ -15,13 +15,20 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "dealsoffers"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "dealsoffers",
+    "components": [
+      "dealsoffers-item"
     ]
   },
   {
