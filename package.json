@@ -5,6 +5,7 @@
   "description": "Starter project for Adobe Helix",
   "scripts": {
     "lint:js": "eslint . --ext .json,.js,.mjs",
+    "tailwind": "npx @tailwindcss/cli -i ./styles/tailwind.css -o ./styles/styles.css --watch",
     "lint:css": "stylelint blocks/**/*.css styles/*.css",
     "lint": "npm run lint:js && npm run lint:css",
     "build:json": "npm-run-all -p build:json:models build:json:definitions build:json:filters",
@@ -35,5 +36,9 @@
     "npm-run-all": "4.1.5",
     "stylelint": "16.12.0",
     "stylelint-config-standard": "36.0.1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.6",
+    "tailwindcss": "^4.0.6"
   }
 }
