@@ -229,7 +229,7 @@
         "value": ""
       },
       {
-        "component": "text-input",
+        "component": "text",
         "valueType": "string",
         "name": "priceTitle",
         "value": "",
