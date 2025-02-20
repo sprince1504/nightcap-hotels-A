@@ -191,13 +191,13 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "quoteImage",
+        "name": "offersImage",
         "label": "Quote Image"
       },
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "quoteImageAlt",
+        "name": "offersImageAlt",
         "label": "Image Alt",
         "value": "Default alt"
       },
@@ -205,21 +205,8 @@
         "component": "text-area",
         "valueType": "string",
         "value": "",
-        "name": "quote",
-        "label": "Quote"
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "quoteLogo",
-        "label": "Quote Logo"
-      },
-      {
-        "component": "text-input",
-        "valueType": "string",
-        "name": "quoteLogoAlt",
-        "label": "Image Alt",
-        "value": "Default alt"
+        "name": "offers",
+        "label": "Offers"
       },
       {
         "component": "text-area",
