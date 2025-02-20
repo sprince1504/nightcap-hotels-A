@@ -214,24 +214,10 @@
         "multi": false
       },
       {
-        "component": "text",
+        "component": "text-input",
         "valueType": "string",
         "name": "title",
         "label": "Title",
-        "value": ""
-      },
-      {
-        "component": "text-input",
-        "valueType": "string",
-        "name": "subtitle",
-        "label": "Sub Title",
-        "value": ""
-      },
-      {
-        "component": "text-input",
-        "valueType": "string",
-        "name": "toplabel",
-        "label": "Top Label",
         "value": ""
       },
       {
@@ -249,7 +235,7 @@
         "value": ""
       },
       {
-        "component": "text",
+        "component": "text-input",
         "valueType": "string",
         "name": "Rating",
         "label": "rating",
