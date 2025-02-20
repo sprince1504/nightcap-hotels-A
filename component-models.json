@@ -189,23 +189,10 @@
     "id": "dealsoffers",
     "fields": [
       {
-        "component": "text",
-        "valueType": "string",
-        "name": "carouselTitle",
-        "value": "",
-        "label": "Carousel Title"
-      },
-      {
         "component": "richtext",
-        "name": "carouselDescription",
-        "label": "Description",
-        "valueType": "string"
-      },
-      {
-        "component": "boolean",
-        "label": "Auto Slide",
-        "name": "isAutoSlide",
-        "valueType": "boolean"
+        "valueType": "string",
+        "name": "description",
+        "label": "Description"
       }
     ]
   },
@@ -222,19 +209,19 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "carouselitemtitle",
+        "name": "title",
         "label": "Title",
         "value": ""
       },
       {
-        "component": "text",
+        "component": "text-input",
         "valueType": "string",
         "name": "subtitle",
         "label": "Sub Title",
         "value": ""
       },
       {
-        "component": "text",
+        "component": "text-input",
         "valueType": "string",
         "name": "toplabel",
         "label": "Top Label",
@@ -248,7 +235,7 @@
         "value": ""
       },
       {
-        "component": "text",
+        "component": "text-input",
         "valueType": "string",
         "name": "price",
         "label": "price",
