@@ -226,20 +226,6 @@
         "name": "Description",
         "label": "carouselitemdesc",
         "value": ""
-      },
-      {
-        "component": "text-input",
-        "valueType": "string",
-        "name": "price",
-        "label": "price",
-        "value": ""
-      },
-      {
-        "component": "text-input",
-        "valueType": "string",
-        "name": "Rating",
-        "label": "rating",
-        "value": "5"
       }
     ]
   }
