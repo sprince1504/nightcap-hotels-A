@@ -222,6 +222,20 @@
       {
         "component": "text-input",
         "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "value": ""
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "subtitle",
+        "label": "Sub Title",
+        "value": ""
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
         "name": "toplabel",
         "label": "Top Label",
         "value": ""
@@ -239,6 +253,13 @@
         "name": "price",
         "label": "price",
         "value": ""
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "Rating",
+        "label": "rating",
+        "value": "5"
       }
     ]
   }
