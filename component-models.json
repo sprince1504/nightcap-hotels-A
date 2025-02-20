@@ -191,28 +191,35 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "offersImage",
-        "label": "Quote Image"
+        "name": "image",
+        "label": "Image"
       },
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "offersImageAlt",
+        "name": "imageAlt",
         "label": "Image Alt",
         "value": "Default alt"
       },
       {
         "component": "text-area",
         "valueType": "string",
-        "value": "",
-        "name": "offers",
-        "label": "Offers"
+        "name": "description",
+        "label": "description",
+        "value": ""
       },
       {
-        "component": "text-area",
+        "component": "text-input",
         "valueType": "string",
-        "name": "author",
-        "label": "Author",
+        "name": "price",
+        "label": "Price",
+        "value": ""
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "rating",
+        "label": "Rating",
         "value": ""
       }
     ]
@@ -246,41 +253,6 @@
           {
             "name": "green",
             "value": "green"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "simpleMarquee",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "marqueeText",
-        "value": "",
-        "label": "Marquee text",
-        "description": "The text you want shown in your marquee"
-      },
-      {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Background Color",
-        "description": "The marquee background color",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Red",
-            "value": "bg-red"
-          },
-          {
-            "name": "Green",
-            "value": "bg-green"
-          },
-          {
-            "name": "Blue",
-            "value": "bg-blue"
           }
         ]
       }
