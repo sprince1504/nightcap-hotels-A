@@ -234,13 +234,6 @@
         "name": "offerDescription",
         "label": "Offer Description",
         "value": ""
-      },
-      {
-        "component": "text-input",
-        "valueType": "string",
-        "name": "price",
-        "value": "",
-        "label": "Price"
       }
     ]
   }
