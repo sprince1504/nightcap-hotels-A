@@ -26,6 +26,12 @@
     ]
   },
   {
+    "id": "offers",
+    "components": [
+      "offer"
+    ]
+  },
+  {
     "id": "columns",
     "components": [
       "column"
