@@ -201,23 +201,6 @@
         "name": "tab-description",
         "label": "Description",
         "value": ""
-      },
-      {
-        "component": "select",
-        "name": "type",
-        "value": "",
-        "label": "Tabs Layout",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Horizontal Layout",
-            "value": "horizontal"
-          },
-          {
-            "name": "Vertical Layout",
-            "value": "vertical"
-          }
-        ]
       }
     ]
   },
@@ -225,18 +208,25 @@
     "id": "tab-item",
     "fields": [
       {
-        "component": "richtext",
+        "component": "text-input",
         "valueType": "string",
-        "name": "tab-title",
-        "label": "Tab Title",
-        "value": ""
+        "name": "offerTitle",
+        "value": "",
+        "label": "Offer Title"
       },
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "body-text",
-        "label": "Tab Text",
+        "name": "offerDescription",
+        "label": "Offer Description",
         "value": ""
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "topLabel",
+        "value": "",
+        "label": "Top Label"
       }
     ]
   }
