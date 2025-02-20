@@ -222,7 +222,7 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "title",
+        "name": "carouselitemtitle",
         "label": "Title",
         "value": ""
       },
@@ -244,7 +244,7 @@
         "component": "richtext",
         "valueType": "string",
         "name": "Description",
-        "label": "description",
+        "label": "carouselitemdesc",
         "value": ""
       },
       {
