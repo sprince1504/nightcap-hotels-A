@@ -209,14 +209,14 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
+        "name": "offerimage",
         "label": "Image",
         "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "imageAlt",
+        "name": "offerimageAlt",
         "label": "Alt",
         "value": ""
       },
