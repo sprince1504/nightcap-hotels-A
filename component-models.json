@@ -215,7 +215,7 @@
         "label": "Offer Title"
       },
       {
-        "component": "text",
+        "component": "text-input",
         "valueType": "string",
         "name": "subtitle",
         "value": "",
