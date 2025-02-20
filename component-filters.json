@@ -16,7 +16,7 @@
       "cards",
       "columns",
       "fragment",
-      "offers"
+      "tabs"
     ]
   },
   {
@@ -26,10 +26,8 @@
     ]
   },
   {
-    "id": "offers",
-    "components": [
-      "offer"
-    ]
+    "id": "tabs",
+    "components": ["tab-item"]
   },
   {
     "id": "columns",

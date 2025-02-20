@@ -186,45 +186,42 @@
     ]
   },
   {
-    "id": "offers",
+    "id": "tabs",
     "fields": [
       {
-        "component": "text-input",
-        "label": "Title",
-        "name": "title",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "description",
+        "component": "select",
+        "name": "type",
         "value": "",
-        "label": "Description",
-        "valueType": "string"
+        "label": "Tabs Layout",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Horizontal Layout",
+            "value": "horizontal"
+          },
+          {
+            "name": "Vertical Layout",
+            "value": "vertical"
+          }
+        ]
       }
     ]
   },
   {
-    "id": "offer",
+    "id": "tab-item",
     "fields": [
       {
-        "component": "reference",
+        "component": "richtext",
         "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text-input",
-        "valueType": "string",
-        "name": "title",
-        "label": "Title",
+        "name": "tab-title",
+        "label": "Tab Title",
         "value": ""
       },
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "Description",
-        "label": "carouselitemdesc",
+        "name": "body-text",
+        "label": "Tab Text",
         "value": ""
       }
     ]
