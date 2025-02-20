@@ -189,6 +189,20 @@
     "id": "tabs",
     "fields": [
       {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "title",
+        "value": "",
+        "label": "Title"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "tab-description",
+        "label": "Description",
+        "value": ""
+      },
+      {
         "component": "select",
         "name": "type",
         "value": "",
