@@ -158,31 +158,31 @@
           }
         },
         {
-          "title": "Tabs",
-          "id": "tabs",
+          "title": "offers",
+          "id": "offers",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "Tabs",
-                  "model": "tabs",
-                  "filter": "tabs"
+                  "name": "Offers",
+                  "model": "offers",
+                  "filter": "offers"
                 }
               }
             }
           }
         },
         {
-          "title": "Tab Item",
-          "id": "tab-item",
+          "title": "Offer Item",
+          "id": "offer-item",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
-                  "name": "Tab Item",
-                  "model": "tab-item"
+                  "name": "Offer Item",
+                  "model": "offer-item"
                 }
               }
             }

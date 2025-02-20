@@ -186,7 +186,7 @@
     ]
   },
   {
-    "id": "tabs",
+    "id": "offers",
     "fields": [
       {
         "component": "text-input",
@@ -205,7 +205,7 @@
     ]
   },
   {
-    "id": "tab-item",
+    "id": "offer-item",
     "fields": [
       {
         "component": "text-input",
