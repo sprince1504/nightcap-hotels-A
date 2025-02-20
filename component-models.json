@@ -163,6 +163,27 @@
     "id": "hero",
     "fields": [
       {
+        "component": "select",
+        "label": "Variation",
+        "name": "variation",
+        "valueType": "string",
+        "value": "imageVariation",
+        "options": [
+          {
+            "name": "Image - Default",
+            "value": "imageVariation"
+          },
+          {
+            "name": "Video",
+            "value": "videoVariation"
+          },
+          {
+            "name": "No Background Image / Video",
+            "value": "noVariation"
+          }
+        ]
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "image",
@@ -170,18 +191,239 @@
         "multi": false
       },
       {
-        "component": "text",
+        "component": "text-input",
         "valueType": "string",
         "name": "imageAlt",
-        "label": "Alt",
+        "label": "Image Alt Text",
+        "value": ""
+      },
+      {
+        "component": "select",
+        "label": "Image Position",
+        "name": "classes",
+        "valueType": "string",
+        "value": "image-position-right",
+        "options": [
+          {
+            "name": "Left",
+            "value": "image-position-left"
+          },
+          {
+            "name": "Center",
+            "value": "image-position-center"
+          },
+          {
+            "name": "Right - Default",
+            "value": "image-position-right"
+          },
+          {
+            "name": "Image Position Right 40%",
+            "value": "image-position-right-40"
+          },
+          {
+            "name": "Image Position Right 35%",
+            "value": "image-position-right-35"
+          },
+          {
+            "name": "Image Position Right 30%",
+            "value": "image-position-right-30"
+          },
+          {
+            "name": "Image Position Right 25%",
+            "value": "image-position-right-25"
+          },
+          {
+            "name": "Image Position Right 20%",
+            "value": "image-position-right-20"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "embedVideo",
+        "label": "Embed Video Placeholder",
+        "description": "ⓘ Video placeholder for video hero variation",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "embedVideoAlt",
+        "label": "Video Placeholder Alt Text",
+        "value": ""
+      },
+      {
+        "component": "text-input",
+        "name": "url",
+        "label": "Embed Video URL",
+        "valueType": "string",
         "value": ""
       },
       {
         "component": "richtext",
-        "name": "text",
+        "valueType": "string",
+        "name": "overlayContent",
+        "label": "Embed Video Overlay Content",
+        "value": ""
+      },
+      {
+        "component": "boolean",
+        "label": "Enable PopUp Modal",
+        "name": "popUpModal",
+        "valueType": "boolean",
+        "description": "ⓘ When selected, the Video will open in a Popup Modal"
+      },
+      {
+        "component": "radio-group",
+        "label": "Hero Height",
+        "name": "heroVariation",
+        "valueType": "string",
+        "value": "hero-primary-height",
+        "options": [
+          {
+            "name": "Hero Height 800px",
+            "value": "hero-secondary-height"
+          },
+          {
+            "name": "Hero Height 465px - Default",
+            "value": "hero-primary-height"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "heroPreheader",
+        "label": "Hero Eyebrow Text",
         "value": "",
-        "label": "Custom 2 Text",
-        "valueType": "string"
+        "description": "ⓘ Hero Eyebrow Text"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "heroContent",
+        "label": "Hero Content",
+        "value": "",
+        "description": "ⓘ Heading (H1) and Description"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "buttonOneLink",
+        "value": "",
+        "label": "Button Link"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "buttonOneLinkText",
+        "value": "",
+        "label": "Button Label"
+      },
+      {
+        "component": "radio-group",
+        "label": "Button 1 Style",
+        "name": "buttonOneLinkType",
+        "valueType": "string",
+        "value": "primary",
+        "options": [
+          {
+            "name": "Primary",
+            "value": "primary"
+          },
+          {
+            "name": "Secondary",
+            "value": "secondary"
+          }
+        ]
+      },
+      {
+        "component": "boolean",
+        "label": "Target Blank",
+        "name": "isTargetBlankOne",
+        "valueType": "boolean"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "buttonTwoLink",
+        "value": "",
+        "label": "Button Link"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "buttonTwoLinkText",
+        "value": "",
+        "label": "Button Label"
+      },
+      {
+        "component": "radio-group",
+        "label": "Button 2 Style",
+        "name": "buttonTwoLinkType",
+        "value": "primary",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Primary",
+            "value": "primary"
+          },
+          {
+            "name": "Secondary",
+            "value": "secondary"
+          }
+        ]
+      },
+      {
+        "component": "boolean",
+        "label": "Target Blank",
+        "name": "isTargetBlankTwo",
+        "valueType": "boolean"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "buttonThreeLink",
+        "value": "",
+        "label": "Button Link"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "buttonThreeLinkText",
+        "value": "",
+        "label": "Button Label"
+      },
+      {
+        "component": "radio-group",
+        "label": "Button 3 Style",
+        "name": "buttonThreeLinkType",
+        "valueType": "string",
+        "value": "primary",
+        "options": [
+          {
+            "name": "Primary",
+            "value": "primary"
+          },
+          {
+            "name": "Secondary",
+            "value": "secondary"
+          }
+        ]
+      },
+      {
+        "component": "boolean",
+        "label": "Target Blank",
+        "name": "isTargetBlankThree",
+        "valueType": "boolean"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "heroStats",
+        "label": "Stats in Hero",
+        "value": ""
       }
     ]
   },
