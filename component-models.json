@@ -208,6 +208,13 @@
     "id": "offer-item",
     "fields": [
       {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
         "component": "text-input",
         "valueType": "string",
         "name": "title",
