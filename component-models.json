@@ -208,9 +208,9 @@
     "id": "tab-item",
     "fields": [
       {
-        "component": "text",
+        "component": "text-input",
         "valueType": "string",
-        "name": "offerTitle",
+        "name": "title",
         "value": "",
         "label": "Offer Title"
       },
