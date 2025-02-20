@@ -215,12 +215,20 @@
         "label": "Offer Title"
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "subtitle",
+        "value": "",
+        "label": "Offer Title"
+      },
+      {
         "component": "richtext",
         "valueType": "string",
         "name": "offerDescription",
         "label": "Offer Description",
         "value": ""
       }
+      
     ]
   }
 ]
