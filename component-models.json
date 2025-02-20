@@ -184,5 +184,23 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "offers",
+    "fields": [
+      {
+        "component": "text-input",
+        "label": "Title",
+        "name": "title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Description",
+        "valueType": "string"
+      }
+    ]
   }
 ]
