@@ -219,7 +219,7 @@
         "valueType": "string",
         "name": "subtitle",
         "value": "",
-        "label": "Offer Title"
+        "label": "Offer Sub Title"
       },
       {
         "component": "richtext",
@@ -227,6 +227,13 @@
         "name": "offerDescription",
         "label": "Offer Description",
         "value": ""
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "price",
+        "value": "",
+        "label": "Price"
       }
     ]
   }
