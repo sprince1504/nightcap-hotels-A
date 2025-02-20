@@ -186,7 +186,7 @@
     ]
   },
   {
-    "id": "offersndeals",
+    "id": "quote",
     "fields": [
       {
         "component": "reference",
