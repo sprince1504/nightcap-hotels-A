@@ -231,16 +231,9 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "price",
+        "name": "priceTitle",
         "value": "",
         "label": "Price"
-      },
-      {
-        "component": "text-input",
-        "valueType": "string",
-        "name": "rating",
-        "value": "",
-        "label": "rating"
       }
     ]
   }
