@@ -32,6 +32,7 @@ class OffersCarousel {
     this.createCarouselStructure();
     this.createSlides();
     this.setupControls();
+    this.setupPagination();
     this.setupEventListeners();
     this.optimizeImages();
     this.currentSlide = 1;
@@ -40,12 +41,17 @@ class OffersCarousel {
     // Clear the block's content
     this.block.textContent = "";
 
-    // Add header and carousel to block
+    // Add header and main container to block
     this.block.appendChild(header);
-    this.block.appendChild(this.carouselWrapper);
+    this.block.appendChild(this.mainContainer);
   }
 
   createCarouselStructure() {
+    // Create main container to hold both carousel and pagination
+    this.mainContainer = document.createElement("div");
+    this.mainContainer.className = "flex flex-col items-center gap-8";
+
+    // Carousel wrapper
     this.carouselWrapper = document.createElement("div");
     this.carouselWrapper.setAttribute("role", "region");
     this.carouselWrapper.setAttribute("aria-label", "Offers carousel");
@@ -56,6 +62,11 @@ class OffersCarousel {
     this.slideTrack.className =
       "flex gap-6 transition-transform duration-500 ease-in-out h-full";
     this.slideTrack.style.width = "100%";
+
+    // Pagination container - now outside of carousel wrapper
+    this.paginationContainer = document.createElement("div");
+    this.paginationContainer.className =
+      "flex justify-center items-center gap-2 mt-8";
   }
 
   createSlides() {
@@ -161,6 +172,36 @@ class OffersCarousel {
     this.carouselWrapper.append(this.prevButton, this.nextButton);
   }
 
+  setupPagination() {
+    this.paginationDots = this.slides.map((_, index) => {
+      const dot = document.createElement("button");
+      dot.className = `w-[0.5rem] aspect-square rounded-full transition-colors duration-300 
+        ${
+          index === this.currentSlide ? "bg-black" : "bg-[#E5E5E5]"
+        } cursor-pointer`;
+      dot.setAttribute("aria-label", `Go to slide ${index + 1}`);
+      dot.setAttribute(
+        "aria-current",
+        index === this.currentSlide ? "true" : "false"
+      );
+
+      // Add click handler
+      dot.addEventListener("click", () => {
+        this.currentSlide = index;
+        this.updateSlides();
+        dot.focus();
+      });
+
+      return dot;
+    });
+
+    // Clear and append new dots
+    this.paginationContainer.textContent = "";
+    this.paginationDots.forEach((dot) =>
+      this.paginationContainer.appendChild(dot)
+    );
+  }
+
   setupEventListeners() {
     this.prevButton.addEventListener("click", () => {
       this.previousSlide();
@@ -239,6 +280,9 @@ class OffersCarousel {
     this.nextButton.style.display = isLastSlide ? "none" : "flex";
 
     this.updateSlidesDimensions();
+
+    // Update pagination dots
+    this.updatePagination();
   }
 
   updateSlidesDimensions() {
@@ -274,9 +318,26 @@ class OffersCarousel {
     });
   }
 
+  updatePagination() {
+    this.paginationDots.forEach((dot, index) => {
+      dot.className = `w-[0.5rem] aspect-square rounded-full transition-colors duration-300 
+        ${
+          index === this.currentSlide ? "bg-black" : "bg-[#E5E5E5]"
+        } cursor-pointer`;
+      dot.setAttribute(
+        "aria-current",
+        index === this.currentSlide ? "true" : "false"
+      );
+    });
+  }
+
   render() {
-    // Append slide track to carousel wrapper
+    // Add carousel wrapper to main container
     this.carouselWrapper.append(this.slideTrack);
+    this.mainContainer.appendChild(this.carouselWrapper);
+
+    // Add pagination below carousel
+    this.mainContainer.appendChild(this.paginationContainer);
   }
 }
 
