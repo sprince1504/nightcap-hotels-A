@@ -234,6 +234,12 @@
         "name": "offerDescription",
         "label": "Offer Description",
         "value": ""
+      },
+      {
+        "component": "aem-tag",
+        "label": "Tags",
+        "name": "tags",
+        "valueType": "string"
       }
     ]
   }
