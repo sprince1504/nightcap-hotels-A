@@ -218,22 +218,19 @@
         "component": "text-input",
         "valueType": "string",
         "name": "title",
-        "value": "",
         "label": "Offer Title"
       },
       {
         "component": "text-input",
         "valueType": "string",
         "name": "subtitle",
-        "value": "",
         "label": "Offer Sub Title"
       },
       {
         "component": "richtext",
         "valueType": "string",
         "name": "offerDescription",
-        "label": "Offer Description",
-        "value": ""
+        "label": "Offer Description"
       },
       {
         "component": "aem-tag",
